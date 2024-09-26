@@ -39,6 +39,10 @@ jobs:
       - name: Create kind cluster
         if: steps.list-changed.outputs.changed == 'true'
         uses: helm/kind-action@v1.10.0
+      
+      - name: Create pull secret
+        if: steps.list-changed.outputs.changed == 'true'
+        run: kubectl create secret docker-registry regcred --docker-server=bikenow.vkw.tu-dresden.de --docker-username="${{ secrets.NEXUS_READ_USERNAME }}" --docker-password="${{ secrets.NEXUS_READ_PASSWORD }}"
 
       - name: Run chart-testing (install)
         if: steps.list-changed.outputs.changed == 'true'
