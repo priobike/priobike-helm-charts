@@ -1,5 +1,53 @@
 apiVersion: v1
 entries:
+  priobike-mqtt:
+  - apiVersion: v2
+    appVersion: v1.0
+    created: "2024-09-26T14:41:05.146380445Z"
+    description: A Helm chart for Kubernetes
+    digest: 2af61a6a22604f65c67b657287302f9e7819c2e2a2742e8965bbeb4b3296c1d4
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-mqtt
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-mqtt-0.1.0/priobike-mqtt-0.1.0.tgz
+    version: 0.1.0
+  priobike-mqtt-authenticator:
+  - apiVersion: v2
+    appVersion: v1.0
+    created: "2024-09-26T14:41:05.299500678Z"
+    description: A Helm chart for Kubernetes
+    digest: 93d4292648ce284adb1499f822062b535dfb3b95c6f2c74d395a4dfbcb787b83
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-mqtt-authenticator
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-mqtt-authenticator-0.1.0/priobike-mqtt-authenticator-0.1.0.tgz
+    version: 0.1.0
+  priobike-privacy-policy-service:
+  - apiVersion: v2
+    appVersion: v1.2
+    created: "2024-09-26T14:41:05.432009149Z"
+    description: A Helm chart for Kubernetes
+    digest: 05f20c0e3f8baed23ad34064cc4d64b604f65ff11b51cc46c51727c1e1a64f57
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-privacy-policy-service
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-privacy-policy-service-0.4.0/priobike-privacy-policy-service-0.4.0.tgz
+    version: 0.4.0
   privacy-policy:
   - apiVersion: v2
     appVersion: v1.2
@@ -46,4 +94,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-26T12:10:17.640500919Z"
+generated: "2024-09-26T14:41:05.43202066Z"
