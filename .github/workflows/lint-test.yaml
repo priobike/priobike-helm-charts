@@ -44,7 +44,7 @@ jobs:
         if: steps.list-changed.outputs.changed == 'true'
         run: | 
           kubectl create namespace testing 
-          kubectl create secret docker-registry regcred --docker-server=bikenow.vkw.tu-dresden.de --docker-username="${{ secrets.DOCKER_REGISTRY_USERNAME }}" --docker-password="${{ secrets.DOCKER_REGISTRY_PASSWORD }}" --namespace=testing
+          kubectl create secret docker-registry regcred --docker-server=bikenow.vkw.tu-dresden.de --docker-username="${{ secrets.NEXUS_READ_USERNAME }}" --docker-password="${{ secrets.NEXUS_READ_PASSWORD }}" --namespace=testing
 
       - name: Run chart-testing (install)
         if: steps.list-changed.outputs.changed == 'true'
