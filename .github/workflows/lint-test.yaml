@@ -42,8 +42,8 @@ jobs:
       
       - name: Create pull secret
         if: steps.list-changed.outputs.changed == 'true'
-        run: kubectl create secret docker-registry regcred --docker-server=bikenow.vkw.tu-dresden.de --docker-username="${{ secrets.NEXUS_READ_USERNAME }}" --docker-password="${{ secrets.NEXUS_READ_PASSWORD }}"
+        run: kubectl create secret docker-registry regcred --docker-server=bikenow.vkw.tu-dresden.de --docker-username="${{ secrets.NEXUS_READ_USERNAME }}" --docker-password="${{ secrets.NEXUS_READ_PASSWORD }}" --namespace=testing
 
       - name: Run chart-testing (install)
         if: steps.list-changed.outputs.changed == 'true'
-        run: ct install --target-branch ${{ github.event.repository.default_branch }}
+        run: ct install --target-branch ${{ github.event.repository.default_branch }} --namespace testing
