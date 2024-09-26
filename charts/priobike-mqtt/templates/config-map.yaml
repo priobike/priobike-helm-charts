@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: priobike-mqtt-config
+data:
+  MQTT_PORT: {{ .Values.containerPort }}
+  EMQX_CLUSTER__DISCOVERY_STRATEGY: dns
+  EMQX_CLUSTER__DNS__NAME: priobike-mqtt-service.{{ required "A valid .Values.namespace entry required!" .Values.namespace }}.svc.cluster.local
+  EMQX_CLUSTER__DNS__RECORD_TYPE: a
+  EMQX_AUTHENTICATION__1__URL: http://{{ required "A valid .Values.mqttAuthenticatorServiceName entry required!" .Values.mqttAuthenticatorServiceName }}.{{ required "A valid .Values.namespace entry required!" .Values.namespace }}.svc.cluster.local:{{ required "A valid .Values.mqttAuthenticatorContainerPort entry required!" .Values.mqttAuthenticatorContainerPort }}
