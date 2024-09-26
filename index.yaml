@@ -3,6 +3,21 @@ entries:
   privacy-policy:
   - apiVersion: v2
     appVersion: v1.2
+    created: "2024-09-26T11:19:20.593000911Z"
+    description: A Helm chart for Kubernetes
+    digest: cd2a25f482c617d079c739f84346952d1573a914e8be926947bbfff709fcd825
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: privacy-policy
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.2.0/privacy-policy-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: v1.2
     created: "2024-09-26T10:58:14.034215656Z"
     description: A Helm chart for Kubernetes
     digest: 27d7e875f79cd53fdf1a443fe9d27c1b81d818c5a2a10ae09a45f9138affbab9
@@ -16,4 +31,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-26T10:58:14.034222408Z"
+generated: "2024-09-26T11:19:20.593008024Z"
