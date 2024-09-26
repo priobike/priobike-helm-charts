@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: priobike-mqtt-authenticator-config
 data:
-  PORT: {{ .Values.containerPort }}
+  PORT: {{ .Values.containerPort | quote }}

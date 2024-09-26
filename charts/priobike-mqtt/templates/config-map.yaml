@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: priobike-mqtt-config
 data:
-  MQTT_PORT: {{ .Values.containerPort }}
+  MQTT_PORT: {{ .Values.containerPort | quote }}
   EMQX_CLUSTER__DISCOVERY_STRATEGY: dns
   EMQX_CLUSTER__DNS__NAME: priobike-mqtt-service.{{ required "A valid .Values.namespace entry required!" .Values.namespace }}.svc.cluster.local
   EMQX_CLUSTER__DNS__RECORD_TYPE: a
