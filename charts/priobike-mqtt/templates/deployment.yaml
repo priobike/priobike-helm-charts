@@ -22,6 +22,4 @@ spec:
           - containerPort: {{ .Values.containerPort }}
           envFrom:
           - configMapRef:
-            name: priobike-mqtt-config
-
-        
+              name: priobike-mqtt-config

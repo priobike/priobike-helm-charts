@@ -22,8 +22,6 @@ spec:
           - containerPort: {{ .Values.containerPort }}
           envFrom:
           - configMapRef:
-            name: priobike-mqtt-authenticator-config
+              name: priobike-mqtt-authenticator-config
           - secretRef:
-            name: priobike-mqtt-authenticator-secret
-
-        
+              name: priobike-mqtt-authenticator-secret
