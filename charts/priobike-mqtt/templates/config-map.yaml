@@ -16,4 +16,5 @@ data:
     .
     {{- (.Values.global).namespace | default .Values.namespace | required "A valid .Values.namespace or .Values.global.namespace entry required!" -}}
     .svc.cluster.local:
-    {{- required "A valid .Values.mqttAuthenticatorContainerPort entry required!" .Values.mqttAuthenticatorContainerPort }}
+    {{- required "A valid .Values.mqttAuthenticatorContainerPort entry required!" .Values.mqttAuthenticatorContainerPort -}}
+    /
