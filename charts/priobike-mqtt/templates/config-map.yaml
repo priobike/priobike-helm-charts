@@ -5,12 +5,12 @@ metadata:
 data:
   MQTT_PORT: {{ .Values.containerPort | quote }}
   EMQX_CLUSTER__DISCOVERY_STRATEGY: dns
-  EMQX_CLUSTER__DNS__NAME: |
+  EMQX_CLUSTER__DNS__NAME: |-
     priobike-mqtt-service.
     {{- (.Values.global).namespace | default .Values.namespace | required "A valid .Values.namespace or .Values.global.namespace entry required!" -}}
     .svc.cluster.local
   EMQX_CLUSTER__DNS__RECORD_TYPE: a
-  EMQX_AUTHENTICATION__1__URL: |
+  EMQX_AUTHENTICATION__1__URL: |-
     http://
     {{- required "A valid .Values.mqttAuthenticatorServiceName entry required!" .Values.mqttAuthenticatorServiceName -}}
     .
