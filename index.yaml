@@ -3,6 +3,21 @@ entries:
   priobike-mqtt:
   - apiVersion: v2
     appVersion: v1.0
+    created: "2024-09-27T12:07:48.18852484Z"
+    description: A Helm chart for Kubernetes
+    digest: aa06b8624a2d81406b2ed5ab30e7e55ae6454fb65f2716119d35438f58e15c6a
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-mqtt
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-mqtt-0.4.0/priobike-mqtt-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: v1.0
     created: "2024-09-27T11:57:35.955663092Z"
     description: A Helm chart for Kubernetes
     digest: 95a5e93f9f999cd61f87a1182c55682d221ed4de71f3bcc7497152509cd5ee42
@@ -154,4 +169,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-27T11:57:35.955685023Z"
+generated: "2024-09-27T12:07:48.188547903Z"
