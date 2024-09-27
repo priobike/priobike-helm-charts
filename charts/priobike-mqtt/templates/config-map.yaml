@@ -7,13 +7,13 @@ data:
   EMQX_CLUSTER__DISCOVERY_STRATEGY: dns
   EMQX_CLUSTER__DNS__NAME: |
     priobike-mqtt-service.
-    {{- .Values.global.namespace | default .Value.namespace | required "A valid .Values.namespace or .Values.global.namespace entry required!" -}}
+    {{- (.Values.global).namespace | default .Value.namespace | required "A valid .Values.namespace or .Values.global.namespace entry required!" -}}
     .svc.cluster.local
   EMQX_CLUSTER__DNS__RECORD_TYPE: a
   EMQX_AUTHENTICATION__1__URL: |
     http://
     {{- required "A valid .Values.mqttAuthenticatorServiceName entry required!" .Values.mqttAuthenticatorServiceName -}}
     .
-    {{- .Values.global.namespace | default .Value.namespace | required "A valid .Values.namespace or .Values.global.namespace entry required!" -}}
+    {{- (.Values.global).namespace | default .Value.namespace | required "A valid .Values.namespace or .Values.global.namespace entry required!" -}}
     .svc.cluster.local:
     {{- required "A valid .Values.mqttAuthenticatorContainerPort entry required!" .Values.mqttAuthenticatorContainerPort }}
