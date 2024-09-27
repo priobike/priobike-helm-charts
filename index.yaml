@@ -34,6 +34,21 @@ entries:
   priobike-mqtt-authenticator:
   - apiVersion: v2
     appVersion: v1.0
+    created: "2024-09-27T08:05:47.788137806Z"
+    description: A Helm chart for Kubernetes
+    digest: 7681cfd129d992227b077f578d2cb9fbb007ae89109e003de1b4cde46bd8c181
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-mqtt-authenticator
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-mqtt-authenticator-0.3.0/priobike-mqtt-authenticator-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: v1.0
     created: "2024-09-27T07:41:26.260657665Z"
     description: A Helm chart for Kubernetes
     digest: e36cae5651a8edad343d34773d1554a396b11b1315aeaa9c6c977cb34fc656be
@@ -124,4 +139,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-27T07:41:26.260670108Z"
+generated: "2024-09-27T08:05:47.78817777Z"
