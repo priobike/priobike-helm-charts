@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: priobike-shlink-guard-deployment
+spec:
+    selector: 
+      matchLabels:
+        app: priobike-shlink-guard-app
+    template:
+      metadata:
+        labels:
+          app: priobike-shlink-guard-app
+      spec:
+        imagePullSecrets:
+        - name: regcred
+
+        containers:
+        - name: priobike-shlink-guard-container
+          image: bikenow.vkw.tu-dresden.de/priobike/priobike-shlink-guard:main
+          envFrom:
+          - configMapRef:
+              name: priobike-shlink-guard-config

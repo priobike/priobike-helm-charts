@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: priobike-shlink-guard-config
+data:
+  LOG_LEVEL: {{ .Values.logLevel }}
+  PROXY_TARGET: http://priobike-shlink-service.{{ .Values.namespace }}.svc.cluster.local:8080

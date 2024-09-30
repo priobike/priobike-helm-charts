@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: priobike-shlink-config
+data:
+  DEFAULT_DOMAIN: {{ required "A valid .Values.defaultDomain entry required!" .Values.defaultDomain }}
+  IS_HTTPS_ENABLED: true
+  DB_DRIVER: postgres
+  DB_HOST: priobike-shlink-porstgres-service.{{ .Values.namespace }}.svc.cluster.local
+  DISABLE_TRACKING: true

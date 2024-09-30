@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: priobike-shlink-cache-service-deployment
+spec:
+    replicas: {{ .Values.replicas }}
+    selector: 
+      matchLabels:
+        app: priobike-shlink-cache-service-app
+    template:
+      metadata:
+        labels:
+          app: priobike-shlink-cache-service-app
+      spec:
+        imagePullSecrets:
+        - name: regcred
+
+        containers:
+        - name: priobike-shlink-cache-service-container
+          image: bikenow.vkw.tu-dresden.de/priobike/priobike-cache:main
+          envFrom:
+          - configMapRef:
+              name: priobike-shlink-cache-service-config
+          - secretRef:
+              name: priobike-shlink-cache-service-secret
