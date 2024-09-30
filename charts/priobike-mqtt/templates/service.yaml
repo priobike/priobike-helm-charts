@@ -9,5 +9,5 @@ spec:
     - protocol: TCP
       port: {{ .Values.containerPort }}
       targetPort: {{ .Values.containerPort }}
-      nodePort: {{ .Values.nodePort }}
+      nodePort: {{ required "A valid .Values.nodePort entry is required!" .Values.nodePort }}
   type: NodePort
