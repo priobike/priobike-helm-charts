@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: StatefulSet
+kind: Deployment
 metadata:
-  name: priobike-shlink
+  name: priobike-shlink-deployment
 spec:
   replicas: 1
   serviceName: priobike-shlink-service

@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: priobike-shlink-postgres
+  name: priobike-shlink-postgres-statefulset
 spec:
   serviceName: priobike-shlink-postgres-service
   replicas: 1

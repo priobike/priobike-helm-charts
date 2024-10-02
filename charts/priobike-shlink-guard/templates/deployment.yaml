@@ -16,7 +16,7 @@ spec:
 
         containers:
         - name: priobike-shlink-guard-container
-          image: bikenow.vkw.tu-dresden.de/priobike/priobike-shlink-guard:main
+          image: bikenow.vkw.tu-dresden.de/priobike/priobike-shlink-guard:v1.1
           envFrom:
           - configMapRef:
               name: priobike-shlink-guard-config

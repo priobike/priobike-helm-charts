@@ -17,7 +17,7 @@ spec:
 
         containers:
         - name: priobike-shlink-cache-service-container
-          image: bikenow.vkw.tu-dresden.de/priobike/priobike-cache:main
+          image: bikenow.vkw.tu-dresden.de/priobike/priobike-cache:v1.4
           envFrom:
           - configMapRef:
               name: priobike-shlink-cache-service-config
