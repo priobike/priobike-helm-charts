@@ -3,11 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: priobike-shlink-postgres-volume-claim
 spec:
-  selector:
-    app: priobike-shlink-postgres-app
-  storageClassName: manual
+  storageClassName: standard
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: 1Gi

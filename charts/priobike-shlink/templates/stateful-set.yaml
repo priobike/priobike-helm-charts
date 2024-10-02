@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: priobike-shlink
+spec:
+  replicas: 1
+  serviceName: priobike-shlink-service
+  selector: 
+    matchLabels:
+      app: priobike-shlink-app
+  template:
+    metadata:
+      labels:
+        app: priobike-shlink-app
+    spec:      
+      containers:
+      - name: priobike-shlink-container
+        image: shlinkio/shlink:4.1.1
+        envFrom:
+        - configMapRef:
+            name: priobike-shlink-config
+        - secretRef:
+            name: priobike-shlink-secret
