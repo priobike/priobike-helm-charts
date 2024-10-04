@@ -4,7 +4,6 @@ metadata:
   name: priobike-shlink-deployment
 spec:
   replicas: 1
-  serviceName: priobike-shlink-service
   selector: 
     matchLabels:
       app: priobike-shlink-app
