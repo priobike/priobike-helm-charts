@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: priobike-shlink-deployment
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: priobike-shlink-app
+  template:
+    metadata:
+      labels:
+        app: priobike-shlink-app
+    spec:
+      containers:
+      - name: priobike-shlink-container
+        image: shlinkio/shlink:4.1.1
+        envFrom:
+        - configMapRef:
+            name: priobike-shlink-config
+        - secretRef:
+            name: priobike-shlink-secret

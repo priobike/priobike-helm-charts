@@ -1,0 +1,6 @@
+namespace: exampleNamespace
+defaultHost: exampleDefaultDomain
+initialApiKey: exampleInitialApiKey
+dbUser: exampleDbUser
+dbPassword: exampleDbPassword
+dbName: exampleDbName
