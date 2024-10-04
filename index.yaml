@@ -138,6 +138,54 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-privacy-policy-service-0.4.0/priobike-privacy-policy-service-0.4.0.tgz
     version: 0.4.0
+  priobike-shlink:
+  - apiVersion: v2
+    appVersion: 4.1.1
+    created: "2024-10-04T09:17:18.698707211Z"
+    description: A Helm chart for Kubernetes
+    digest: 88f61136d5c6b35199c70b88e5caf38be3a9769cc0594a6613a3684a11c5dce2
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-shlink
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-shlink-0.1.0/priobike-shlink-0.1.0.tgz
+    version: 0.1.0
+  priobike-shlink-cache-service:
+  - apiVersion: v2
+    appVersion: v1.4
+    created: "2024-10-04T09:17:18.950059609Z"
+    description: A Helm chart for Kubernetes
+    digest: b5cd7aac5b714531ad864ebe77f8702b7977351316bf1220ccad8e4c73b9316d
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-shlink-cache-service
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-shlink-cache-service-0.1.0/priobike-shlink-cache-service-0.1.0.tgz
+    version: 0.1.0
+  priobike-shlink-guard:
+  - apiVersion: v2
+    appVersion: v1.1
+    created: "2024-10-04T09:17:19.134094001Z"
+    description: A Helm chart for Kubernetes
+    digest: cc0b74905007557fbb229790ea473f0a88f6d4b212824b99da709b74e16e57cf
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-shlink-guard
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-shlink-guard-0.1.0/priobike-shlink-guard-0.1.0.tgz
+    version: 0.1.0
   privacy-policy:
   - apiVersion: v2
     appVersion: v1.2
@@ -184,4 +232,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-30T13:14:06.533779697Z"
+generated: "2024-10-04T09:17:19.134149756Z"
