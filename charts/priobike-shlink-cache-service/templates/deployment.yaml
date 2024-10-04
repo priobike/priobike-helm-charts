@@ -21,5 +21,3 @@ spec:
           envFrom:
           - configMapRef:
               name: priobike-shlink-cache-service-config
-          - secretRef:
-              name: priobike-shlink-cache-service-secret
