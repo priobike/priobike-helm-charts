@@ -1,5 +1,5 @@
 namespace: exampleNamespace
-defaultDomain: exampleDefaultDomain
+defaultHost: exampleDefaultDomain
 initialApiKey: exampleInitialApiKey
 dbUser: exampleDbUser
 dbPassword: exampleDbPassword

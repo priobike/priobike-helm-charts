@@ -3,11 +3,13 @@ kind: ConfigMap
 metadata:
   name: priobike-shlink-config
 data:
-  DEFAULT_DOMAIN: {{ required "A valid .Values.defaultDomain entry required!" .Values.defaultDomain }}
+  DEFAULT_HOST: {{ required "A valid .Values.defaultHost entry required!" .Values.defaultHost }}
   IS_HTTPS_ENABLED: true
-  DB_DRIVER: postgres
+  {{- if .Values.dbDriver }}
+  DB_DRIVER: {{ .Values.dbDriver }}
   DB_HOST: |-
     priobike-shlink-porstgres-service.
     {{- (.Values.global).namespace | default .Values.namespace | required "A valid .Values.namespace or .Values.global.namespace entry required!" -}}
     .svc.cluster.local
+  {{- end }}
   DISABLE_TRACKING: true

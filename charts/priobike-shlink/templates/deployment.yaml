@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: priobike-shlink-app
-    spec:      
+    spec:
       containers:
       - name: priobike-shlink-container
         image: shlinkio/shlink:4.1.1
