@@ -5,9 +5,11 @@ The helm chart repository is hosted on GitHub pages and can be accessed at [http
 
 ## Usage
 
-Set the following global values that are used by more than one chart:
+If using more than one chart make sure to set the following values globally:
 - `priobikeImageRegistry`
 - `namespace`
+
+An example deployment can be found here: [https://github.com/priobike/priobike-k8s-deployment](https://github.com/priobike/priobike-k8s-deployment)
 
 ## Naming convention
 
