@@ -6,6 +6,5 @@ configMapName: priobike-cache-config
 deploymentName: priobike-cache-deployment
 containerName: priobike-cache-container
 serviceName: priobike-cache-service
-imageName: priobike-cache
 labels:
   app: priobike-cache-app
