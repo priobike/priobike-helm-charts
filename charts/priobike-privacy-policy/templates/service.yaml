@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: priobike-privacy-policy-service-service
+  name: {{ .Values.serviceName }}
 spec:
   selector:
-    app: priobike-privacy-policy-service-app
+    app: {{ .Values.labels.app }}
   ports:
     - protocol: TCP
       port: 80

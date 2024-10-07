@@ -1,0 +1,9 @@
+replicas: 1
+deploymentName: priobike-privacy-policy-deployment
+containerName: priobike-privacy-policy-container
+ingressName: priobike-privacy-policy-ingress
+serviceName: priobike-privacy-policy-service
+ingressPath: /privacy-policy
+imageName: priobike-privacy-policy-service
+labels:
+  app: priobike-privacy-policy-app

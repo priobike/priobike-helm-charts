@@ -1,4 +1,5 @@
 namespace: exampleNamespace
+priobikeImageRegistry: bikenow.vkw.tu-dresden.de/priobike
 mqttAuthenticatorServiceName: priobike-mqtt-authenticator-service
 mqttAuthenticatorContainerPort: 8000
 nodePort: 30000

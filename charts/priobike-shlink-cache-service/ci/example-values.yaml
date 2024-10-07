@@ -1,4 +1,0 @@
-namespace: exampleNamespace
-replicas: 1
-successStoreTime: 1d
-notFoundStoreTime: 1d

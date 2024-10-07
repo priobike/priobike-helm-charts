@@ -1,1 +1,10 @@
 containerPort: 8000
+replicas: 1
+configMapName: priobike-mqtt-authenticator-config
+deploymentName: priobike-mqtt-authenticator-deployment
+containerName: priobike-mqtt-authenticator-container
+secretName: priobike-mqtt-authenticator-secret
+serviceName: priobike-mqtt-authenticator-service
+imageName: priobike-mqtt-authenticator
+labels:
+  app: priobike-mqtt-authenticator-app

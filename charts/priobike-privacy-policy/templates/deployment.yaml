@@ -14,16 +14,12 @@ spec:
       spec:
         imagePullSecrets:
         - name: regcred
-
+        
         containers:
         - name: {{ .Values.containerName }}
           image: |-
             {{ (.Values.global).priobikeImageRegistry | default .Values.priobikeImageRegistry | required "A valid .Values.priobikeImageRegistry or .Values.global.priobikeImageRegistry entry is required!" -}}
-            /{{ .Values.imageName }}:v1.0
+            /{{ .Values.imageName }}:v1.2
           ports:
-          - containerPort: {{ .Values.containerPort }}
-          envFrom:
-          - configMapRef:
-              name: {{ .Values.configMapName }}
-          - secretRef:
-              name: {{ .Values.secretName }}
+          - containerPort: 80
+        

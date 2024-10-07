@@ -1,1 +1,9 @@
 logLevel: error
+configMapName: priobike-shlink-guard-config
+deploymentName: priobike-shlink-guard-deployment
+containerName: priobike-shlink-guard-container
+serviceName: priobike-shlink-guard-service
+imageName: priobike-shlink-guard
+labels:
+  app: priobike-shlink-guard-app
+shlinkServiceName: priobike-shlink-service

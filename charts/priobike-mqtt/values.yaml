@@ -1,1 +1,9 @@
 containerPort: 1883
+replicas: 1
+serviceName: priobike-mqtt-service
+configMapName: priobike-mqtt-config
+deploymentName: priobike-mqtt-deployment
+containerName: priobike-mqtt-container
+imageName: priobike-mqtt
+labels:
+  app: priobike-mqtt-app

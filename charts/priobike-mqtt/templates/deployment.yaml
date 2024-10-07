@@ -1,25 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: priobike-mqtt-deployment
+    name: {{ .Values.deploymentName }}
 spec:
     replicas: {{ .Values.replicas }}
     selector: 
       matchLabels:
-        app: priobike-mqtt-app
+        app: {{ .Values.labels.app }}
     template:
       metadata: 
         labels: 
-          app: priobike-mqtt-app
+          app: {{ .Values.labels.app }}
       spec:
         imagePullSecrets:
         - name: regcred
 
         containers:
-        - name: priobike-mqtt-container
-          image: bikenow.vkw.tu-dresden.de/priobike/priobike-mqtt:v1.0
+        - name: {{ .Values.containerName }}
+          image: |-
+            {{ (.Values.global).priobikeImageRegistry | default .Values.priobikeImageRegistry | required "A valid .Values.priobikeImageRegistry or .Values.global.priobikeImageRegistry entry is required!" -}}
+            /{{ .Values.imageName }}:v1.0
           ports:
           - containerPort: {{ .Values.containerPort }}
           envFrom:
           - configMapRef:
-              name: priobike-mqtt-config
+              name: {{ .Values.configMapName }}
