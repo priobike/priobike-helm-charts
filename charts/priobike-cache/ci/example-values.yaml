@@ -1,4 +1,4 @@
 namespace: exampleNamespace
-priobikeImageRegistry: exampleRegistry
+priobikeImageRegistry: bikenow.vkw.tu-dresden.de
 originServiceName: exampleServiceName
 originServicePort: 80
