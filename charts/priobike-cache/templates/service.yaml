@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: priobike-shlink-cache-service-service
+  name: {{ .Values.serviceName }}
 spec:
   selector:
-    app: priobike-shlink-cache-service-app
+    app: {{ .Values.labels.app }}
   ports:
     - protocol: TCP
       port: 80

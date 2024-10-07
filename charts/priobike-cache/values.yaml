@@ -1,0 +1,10 @@
+replicas: 1
+successStoreTime: 1d
+notFoundStoreTime: 1d
+imageName: priobike-cache
+configMapName: priobike-cache-config
+deploymentName: priobike-cache-deployment
+containerName: priobike-cache-container
+iamgeName: priobike-cache
+labels:
+  app: priobike-cache-app

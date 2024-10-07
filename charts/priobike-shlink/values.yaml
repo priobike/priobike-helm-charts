@@ -1,0 +1,9 @@
+configMapName: priobike-shlink-config
+serviceName: priobike-shlink-service
+dbServiceName: priobike-shlink-postgres-service
+deploymentName: priobike-shlink-deployment
+containerName: priobike-shlink-container
+secretName: priobike-shlink-secret
+labels:
+  app: priobike-shlink-app
+disableTracking: true

@@ -1,0 +1,4 @@
+namespace: exampleNamespace
+priobikeImageRegistry: exampleRegistry
+originServiceName: exampleServiceName
+originServicePort: 80

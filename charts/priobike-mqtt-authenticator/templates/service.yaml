@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: priobike-mqtt-authenticator-service
+  name: {{ .Values.serviceName }}
 spec:
   selector:
-    app: priobike-mqtt-authenticator-app
+    app: {{ .Values.labels.app }}
   ports:
     - protocol: TCP
       port: {{ .Values.containerPort }}

@@ -1,0 +1,11 @@
+replicas: 1
+successStoreTime: 1d
+notFoundStoreTime: 1d
+configMapName: priobike-shlink-cache-config
+deploymentName: priobike-shlink-cache-deployment
+containerName: priobike-shlink-cache-container
+iamgeName: priobike-cache
+labels:
+  app: priobike-shlink-cache-app
+originServiceName: priobike-shlink-guard-service
+originServicePort: 8000

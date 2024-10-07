@@ -1,4 +1,5 @@
 namespace: exampleNamespace
+priobikeImageRegistry: exampleRegistry
 mqttAuthenticatorServiceName: priobike-mqtt-authenticator-service
 mqttAuthenticatorContainerPort: 8000
 nodePort: 30000

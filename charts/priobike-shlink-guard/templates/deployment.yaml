@@ -1,22 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: priobike-shlink-guard-deployment
+    name: {{ .Values.deploymentName }}
 spec:
     selector: 
       matchLabels:
-        app: priobike-shlink-guard-app
+        app: {{ .Values.labels.app }}
     template:
       metadata:
         labels:
-          app: priobike-shlink-guard-app
+          app: {{ .Values.labels.app }}
       spec:
         imagePullSecrets:
         - name: regcred
 
         containers:
-        - name: priobike-shlink-guard-container
-          image: bikenow.vkw.tu-dresden.de/priobike/priobike-shlink-guard:v1.1
+        - name: {{ .Values.containerName }}
+          image: |-
+            {{ (.Values.global).priobikeImageRegistry | default .Values.priobikeImageRegistry | required "A valid .Values.priobikeImageRegistry or .Values.global.priobikeImageRegistry entry is required!" -}}
+            /{{ .Values.imageName }}:v1.1
           envFrom:
           - configMapRef:
-              name: priobike-shlink-guard-config
+              name: {{ .Values.configMapName }}
