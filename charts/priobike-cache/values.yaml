@@ -5,6 +5,7 @@ imageName: priobike-cache
 configMapName: priobike-cache-config
 deploymentName: priobike-cache-deployment
 containerName: priobike-cache-container
-iamgeName: priobike-cache
+serviceName: priobike-cache-service
+imageName: priobike-cache
 labels:
   app: priobike-cache-app

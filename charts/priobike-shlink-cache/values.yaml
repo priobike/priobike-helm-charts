@@ -4,7 +4,7 @@ notFoundStoreTime: 1d
 configMapName: priobike-shlink-cache-config
 deploymentName: priobike-shlink-cache-deployment
 containerName: priobike-shlink-cache-container
-iamgeName: priobike-cache
+serviceName: priobike-shlink-cache-service
 labels:
   app: priobike-shlink-cache-app
 originServiceName: priobike-shlink-guard-service
