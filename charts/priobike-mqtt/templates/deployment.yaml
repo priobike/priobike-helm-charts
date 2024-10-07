@@ -6,11 +6,11 @@ spec:
     replicas: {{ .Values.replicas }}
     selector: 
       matchLabels:
-        app: {{ .Values.templateLabels.app }}
+        app: {{ .Values.labels.app }}
     template:
       metadata: 
         labels: 
-          app: {{ .Values.templateLabels.app }}
+          app: {{ .Values.labels.app }}
       spec:
         imagePullSecrets:
         - name: regcred

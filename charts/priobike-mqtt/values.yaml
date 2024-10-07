@@ -5,5 +5,5 @@ configMapName: priobike-mqtt-config
 deploymentName: priobike-mqtt-deployment
 containerName: priobike-mqtt-container
 imageName: priobike-mqtt
-templateLabels:
+labels:
   app: priobike-mqtt-app
