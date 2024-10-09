@@ -19,7 +19,7 @@ spec:
         - name: {{ .Values.containerName }}
           image: |-
             {{ (.Values.global).priobikeImageRegistry | default .Values.priobikeImageRegistry | required "A valid .Values.priobikeImageRegistry or .Values.global.priobikeImageRegistry entry is required!" -}}
-            /{{ .Values.imageName }}:v1.4
+            /{{ .Values.imageName }}:v1.5
           envFrom:
           - configMapRef:
               name: {{ .Values.configMapName }}
