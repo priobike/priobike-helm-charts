@@ -1,10 +1,12 @@
 replicas: 1
 successStoreTime: 1d
 notFoundStoreTime: 1d
+resolverIp: 10.96.0.10
 imageName: priobike-cache
 configMapName: priobike-cache-config
 deploymentName: priobike-cache-deployment
 containerName: priobike-cache-container
 serviceName: priobike-cache-service
+ingressName: priobike-cache-ingress
 labels:
   app: priobike-cache-app

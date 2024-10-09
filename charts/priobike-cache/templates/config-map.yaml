@@ -12,3 +12,4 @@ data:
     {{- .Values.originServicePort }}
   SUCCESS_STORE_TIME: {{ .Values.successStoreTime }}
   NOT_FOUND_STORE_TIME: {{ .Values.notFoundStoreTime }}
+  RESOLVER_IP: {{ .Values.resolverIp }}
