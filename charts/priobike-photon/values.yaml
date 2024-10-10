@@ -1,0 +1,9 @@
+replicas: 2
+imageName: priobike-photon-deutschland
+deploymentName: priobike-photon-deployment
+containerName: priobike-photon-container
+serviceName: priobike-photon-service
+ingressName: priobike-photon-ingress
+labels:
+  app: priobike-cache-app
+useIngress: true
