@@ -1,4 +1,4 @@
-replicas: 2
+replicas: 1
 imageName: priobike-photon-deutschland
 deploymentName: priobike-photon-deployment
 containerName: priobike-photon-container
