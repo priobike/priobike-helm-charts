@@ -10,3 +10,4 @@ serviceName: priobike-cache-service
 ingressName: priobike-cache-ingress
 labels:
   app: priobike-cache-app
+useIngress: false
