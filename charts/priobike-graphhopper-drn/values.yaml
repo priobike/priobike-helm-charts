@@ -1,0 +1,8 @@
+replicas: 1
+imageName: priobike-graphhopper-drn
+deploymentName: priobike-graphhopper-drn-deployment
+containerName: priobike-graphhopper-drn-container
+serviceName: priobike-graphhopper-drn-service
+ingressName: priobike-graphhopper-drn-ingress
+labels:
+  app: priobike-graphhopper-drn-app
