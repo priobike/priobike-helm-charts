@@ -1,4 +1,4 @@
-replicas: 2
+replicas: 1
 imageName: priobike-auth
 deploymentName: priobike-auth-deployment
 containerName: priobike-auth-container
