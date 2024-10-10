@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Values.ingressName }}
+  {{- if .Values.annotations }}
+  annotations: 
+    {{- .Values.annotations | toYaml | nindent 4 }}
+  {{- end }}
+spec:
+  ingressClassName: nginx
+  selector:
+    app: {{ .Values.labels.app }}
+  rules:
+  - http:
+      paths:
+      - path: {{ .Values.path | required "A valid .Values.path entry is required!" }}
+        pathType: {{ .Values.pathType | required "A valid .Values.pathType entry is required!" }}
+        backend:
+          service:
+            name: {{ .Values.serviceName }}
+            port:
+              number: 80
