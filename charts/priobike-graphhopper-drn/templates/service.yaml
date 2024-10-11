@@ -7,6 +7,6 @@ spec:
     app: {{ .Values.labels.app }}
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
+      port: 8989
+      targetPort: 8989
   type: ClusterIP
