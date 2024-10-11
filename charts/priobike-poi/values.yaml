@@ -1,0 +1,7 @@
+replicas: 1
+imageName: priobike-poi-service
+deploymentName: priobike-poi-deployment
+containerName: priobike-poi-container
+serviceName: priobike-poi-service
+labels:
+  app: priobike-poi-app
