@@ -1,0 +1,7 @@
+replicas: 1
+imageName: priobike-sg-selector-hamburg-static
+deploymentName: priobike-sg-selector-nginx-deployment
+containerName: priobike-sg-selector-nginx-container
+serviceName: priobike-sg-selector-nginx-service
+labels:
+  app: priobike-sg-selector-nginx-app
