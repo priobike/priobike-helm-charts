@@ -3,7 +3,5 @@ imageName: priobike-auth
 deploymentName: priobike-auth-deployment
 containerName: priobike-auth-container
 serviceName: priobike-auth-service
-ingressName: priobike-auth-ingress
 labels:
   app: priobike-auth-app
-useIngress: true
