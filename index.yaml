@@ -276,6 +276,22 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-privacy-policy-service-0.4.0/priobike-privacy-policy-service-0.4.0.tgz
     version: 0.4.0
+  priobike-sg-selector:
+  - apiVersion: v2
+    appVersion: v1.2
+    created: "2024-10-11T12:05:22.876953746Z"
+    description: A Helm chart for Kubernetes
+    digest: 390ea922e8217df8b530eead68619760abdffe77f6d43b1a1655f700c03949bf
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-sg-selector
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-sg-selector-0.1.0/priobike-sg-selector-0.1.0.tgz
+    version: 0.1.0
   priobike-sg-selector-nginx:
   - apiVersion: v2
     appVersion: v1.2
@@ -416,4 +432,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-11T11:57:01.485371311Z"
+generated: "2024-10-11T12:05:22.877000733Z"
