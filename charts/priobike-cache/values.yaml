@@ -7,7 +7,5 @@ configMapName: priobike-cache-config
 deploymentName: priobike-cache-deployment
 containerName: priobike-cache-container
 serviceName: priobike-cache-service
-ingressName: priobike-cache-ingress
 labels:
   app: priobike-cache-app
-useIngress: false
