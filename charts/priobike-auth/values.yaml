@@ -1,0 +1,7 @@
+replicas: 1
+imageName: priobike-auth
+deploymentName: priobike-auth-deployment
+containerName: priobike-auth-container
+serviceName: priobike-auth-service
+labels:
+  app: priobike-auth-app
