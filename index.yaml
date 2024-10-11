@@ -246,6 +246,22 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-overpass-drn-0.1.0/priobike-overpass-drn-0.1.0.tgz
     version: 0.1.0
+  priobike-photon:
+  - apiVersion: v2
+    appVersion: v1.0
+    created: "2024-10-11T12:06:07.484416653Z"
+    description: A Helm chart for Kubernetes
+    digest: 93d17da94bef39ff1df0c39d9634d77306ee373252bb4dac9ddfc3d810dfa255
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-photon
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-photon-0.1.0/priobike-photon-0.1.0.tgz
+    version: 0.1.0
   priobike-poi:
   - apiVersion: v2
     appVersion: v1.1
@@ -480,4 +496,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-11T12:05:58.356876645Z"
+generated: "2024-10-11T12:06:07.484466616Z"
