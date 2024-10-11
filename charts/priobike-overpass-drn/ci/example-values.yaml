@@ -1,6 +1,2 @@
 namespace: exampleNamespace
 priobikeImageRegistry: bikenow.vkw.tu-dresden.de/priobike
-originServiceName: exampleServiceName
-originServicePort: 80
-path: /drn-overpass(/|$)(.*)
-pathType: Prefix

@@ -3,6 +3,5 @@ imageName: priobike-overpass-drn
 deploymentName: priobike-overpass-drn-deployment
 containerName: priobike-overpass-drn-container
 serviceName: priobike-overpass-drn-service
-ingressName: priobike-overpass-drn-ingress
 labels:
   app: priobike-overpass-drn-app
