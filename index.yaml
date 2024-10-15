@@ -249,6 +249,21 @@ entries:
   priobike-photon:
   - apiVersion: v2
     appVersion: v1.0
+    created: "2024-10-15T07:53:09.027128249Z"
+    description: A Helm chart for Kubernetes
+    digest: 644c0fe7a931f58ef972d28135ff26928457f8819f6d68de91527e4b05c30dbd
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-photon
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-photon-0.2.0/priobike-photon-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: v1.0
     created: "2024-10-11T12:06:07.484416653Z"
     description: A Helm chart for Kubernetes
     digest: 93d17da94bef39ff1df0c39d9634d77306ee373252bb4dac9ddfc3d810dfa255
@@ -496,4 +511,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-11T12:06:07.484466616Z"
+generated: "2024-10-15T07:53:09.027173794Z"
