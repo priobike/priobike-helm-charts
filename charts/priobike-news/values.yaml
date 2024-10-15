@@ -1,0 +1,30 @@
+imageName: priobike-news-service
+
+
+manager:
+  labels:
+    app: priobike-news-manager-app
+  configmapName: priobike-news-manager-config
+  deploymentName: priobike-news-manager-deployment
+  containerName: priobike-news-manager-container
+  volumeClaimName: priobike-news-manager-volume-claim
+  storageClassName: standard
+  storageSize: 1Gi
+  volumeName: priobike-news-manager-volume
+  serviceName: priobike-news-manager-service
+  secretName: priobike-news-manager-secret
+  appUrl: /news-service-manager/
+  debug: 'False'
+
+worker:
+  replicas: 1
+  labels:
+    app: priobike-news-worker-app
+  configmapName: priobike-news-worker-config
+  deploymentName: priobike-news-worker-deployment
+  containerName: priobike-news-worker-container
+  serviceName: priobike-news-worker-service
+  headlessServiceName: priobike-news-worker-service-headless
+  secretName: priobike-news-worker-secret
+  appUrl: /news-service-worker/
+  debug: 'False'

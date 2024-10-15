@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.worker.serviceName }}
+spec:
+  selector:
+    app: {{ .Values.worker.labels.app }}
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+  type: ClusterIP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: priobike-news-worker-service-headless
+spec:
+  selector:
+    app: priobike-news-worker-app
+  ports:
+    - protocol: TCP
+      port: 8001
+      targetPort: 8001
+  clusterIP: None
+  type: ClusterIP
+---

@@ -1,0 +1,10 @@
+namespace: exampleNamespace
+priobikeImageRegistry: bikenow.vkw.tu-dresden.de/priobike
+
+djangoKey: test-key
+djangoSuperuserPassword: test-password
+
+syncKey: test-key
+
+fcmPushNotificationEnvironment: development
+csrfTrustedOrigin: http://localhost
