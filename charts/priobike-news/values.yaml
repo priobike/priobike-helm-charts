@@ -14,7 +14,7 @@ manager:
   serviceName: priobike-news-manager-service
   secretName: priobike-news-manager-secret
   appUrl: /news-service-manager/
-  debug: False
+  debug: 'False'
 
 worker:
   replicas: 1
@@ -27,4 +27,4 @@ worker:
   headlessServiceName: priobike-news-worker-service-headless
   secretName: priobike-news-worker-secret
   appUrl: /news-service-worker/
-  debug: False
+  debug: 'False'

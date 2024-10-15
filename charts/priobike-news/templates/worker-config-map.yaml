@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.worker.configMapName }}
 data:
   DEBUG: {{ .Values.worker.debug | quote }}
-  WORKER_MODE: 'True'
+  WORKER_MODE: "True"
   MANAGER_HOST: |-
     {{ .Values.manager.serviceName | required "A valid .Values.manager.serviceName entry is required!" }}
     .
