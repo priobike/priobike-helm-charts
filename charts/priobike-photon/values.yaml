@@ -4,4 +4,4 @@ deploymentName: priobike-photon-deployment
 containerName: priobike-photon-container
 serviceName: priobike-photon-service
 labels:
-  app: priobike-cache-app
+  app: priobike-photon-app
