@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.manager.configMapName }}
+data:
+  DEBUG: {{ .Values.manager.debug | quote }}
+  WORKER_HOST: |-
+    {{ .Values.worker.serviceName | required "A valid .Values.worker.serviceName entry is required!" }}
+    .
+    {{- (.Values.global).namespace | default .Values.namespace | required "A valid .Values.namespace or .Values.global.namespace entry is required!" -}}
+    .
+    svc.cluster.local
+  APP_URL: {{ .Values.manager.appUrl }}
+  FCM_PUSH_NOTIFICATION_ENVIRONMENT: {{ required "A valid .Values.fcmPushNotificationEnvironment entry is required!" .Values.fcmPushNotificationEnvironment }}
+  CSRF_TRUSTED_ORIGIN: {{ required "A valid .Values.csrfTrustedOrigin entry is required!" .Values.csrfTrustedOrigin }}
