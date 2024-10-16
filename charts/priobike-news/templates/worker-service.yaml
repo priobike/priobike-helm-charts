@@ -10,18 +10,3 @@ spec:
       port: 8000
       targetPort: 8000
   type: ClusterIP
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: priobike-news-worker-service-headless
-spec:
-  selector:
-    app: priobike-news-worker-app
-  ports:
-    - protocol: TCP
-      port: 8001
-      targetPort: 8001
-  clusterIP: None
-  type: ClusterIP
----
