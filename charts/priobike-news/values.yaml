@@ -1,6 +1,5 @@
 imageName: priobike-news-service
 
-
 manager:
   labels:
     app: priobike-news-manager-app
