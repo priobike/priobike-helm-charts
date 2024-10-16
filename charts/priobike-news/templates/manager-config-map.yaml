@@ -11,5 +11,5 @@ data:
     .
     svc.cluster.local
   APP_URL: {{ .Values.manager.appUrl }}
-  FCM_PUSH_NOTIFICATION_ENVIRONMENT: {{ required "A valid .Values.fcmPushNotificationEnvironment entry is required!" .Values.fcmPushNotificationEnvironment }}
+  FCM_PUSH_NOTIFICATION_ENVIRONMENT: {{ required "A valid .Values.manager.fcmPushNotificationEnvironment entry is required!" .Values.manager.fcmPushNotificationEnvironment }}
   CSRF_TRUSTED_ORIGIN: {{ required "A valid .Values.csrfTrustedOrigin entry is required!" .Values.csrfTrustedOrigin }}
