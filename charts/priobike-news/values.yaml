@@ -3,7 +3,7 @@ imageName: priobike-news-service
 manager:
   labels:
     app: priobike-news-manager-app
-  configmapName: priobike-news-manager-config
+  configMapName: priobike-news-manager-config
   deploymentName: priobike-news-manager-deployment
   containerName: priobike-news-manager-container
   volumeClaimName: priobike-news-manager-volume-claim
@@ -19,7 +19,7 @@ worker:
   replicas: 1
   labels:
     app: priobike-news-worker-app
-  configmapName: priobike-news-worker-config
+  configMapName: priobike-news-worker-config
   deploymentName: priobike-news-worker-deployment
   containerName: priobike-news-worker-container
   serviceName: priobike-news-worker-service
