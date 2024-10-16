@@ -233,6 +233,21 @@ entries:
   priobike-news:
   - apiVersion: v2
     appVersion: v2.1
+    created: "2024-10-16T08:22:05.367509583Z"
+    description: A Helm chart for Kubernetes
+    digest: 5f2c3878cea84926b3c9c87bdbe836f6a7f9d5fd4185c7714e2b632d97046b80
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-news
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-news-0.5.0/priobike-news-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
+    appVersion: v2.1
     created: "2024-10-16T08:11:43.425469106Z"
     description: A Helm chart for Kubernetes
     digest: 32cbdfc9a5108b688c49811482ac41b4ff6b84bd8f048ad4f2304e87a3d934ef
@@ -602,4 +617,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-16T08:11:43.425542624Z"
+generated: "2024-10-16T08:22:05.367589875Z"
