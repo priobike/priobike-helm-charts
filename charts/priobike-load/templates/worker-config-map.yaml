@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.worker.configMapName }}
+data:
+  MANAGER_HOSTNAME: |-
+    {{ .Values.manager.serviceName -}}
+    .
+    {{- (.Values.global).namespace | default .Values.namespace | required "A valid .Values.namespace or .Values.global.namespace entry is required!" -}}
+    .svc.cluster.local
+  MANAGER_PORT: "80"

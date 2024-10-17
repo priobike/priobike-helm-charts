@@ -1,0 +1,22 @@
+priobikeImageRegistry: bikenow.vkw.tu-dresden.de/priobike
+
+manager:
+  imageName: priobike-load-service-manager
+  labels:
+    app: priobike-load-manager-app
+  configMapName: priobike-load-manager-config
+  deploymentName: priobike-load-manager-deployment
+  containerName: priobike-load-manager-container
+  serviceName: priobike-load-manager-service
+  secretName: priobike-load-manager-secret
+
+worker:
+  imageName: priobike-load-service-worker
+  replicas: 1
+  labels:
+    app: priobike-load-worker-app
+  configMapName: priobike-load-worker-config
+  deploymentName: priobike-load-worker-deployment
+  containerName: priobike-load-worker-container
+  serviceName: priobike-load-worker-service
+  secretName: priobike-load-worker-secret

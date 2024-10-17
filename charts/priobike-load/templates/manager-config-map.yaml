@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.manager.configMapName }}
+data:
+  WORKER_HOST: |-
+    {{ .Values.worker.serviceName -}}
+    .
+    {{- (.Values.global).namespace | default .Values.namespace | required "A valid .Values.namespace or .Values.global.namespace entry is required!" -}}
+    .svc.cluster.local
+  WORKER_PORT: "80"
+  PROMETHEUS_URL: {{ required "A valid .Values.manager.prometheusUrl entry is required!" .Values.manager.prometheusUrl }}
+  INGRESS_NODE_NAMES: {{ required "A valid .Values.manager.ingressNodeNames entry is required!" .Values.manager.ingressNodeNames }}
+  WORKER_NODE_NAMES: {{ required "A valid .Values.manager.workerNodeNames entry is required!" .Values.manager.workerNodeNames }}
+  STATEFUL_NODE_NAMES: {{ required "A valid .Values.manager.statefulNodeNames entry is required!" .Values.manager.statefulNodeNames }}

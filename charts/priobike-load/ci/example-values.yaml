@@ -1,0 +1,11 @@
+priobikeImageRegistry: bikenow.vkw.tu-dresden.de/priobike
+
+worker:
+  basicAuthUser: user
+  basicAuthPass: test-123
+
+manager:
+  prometheusUrl: https://localhost:9090
+  ingressNodeNames: priobike
+  workerNodeNames: priobike-1,priobike-2,priobike-3,priobike-4
+  statefulNodeNames: priobike-stateful

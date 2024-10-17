@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.manager.deploymentName }}
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: {{ .Values.manager.labels.app }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.manager.labels.app }}
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      
+      containers:
+      - name: {{ .Values.manager.containerName }}
+        image: |-
+          {{ (.Values.global).priobikeImageRegistry | default .Values.priobikeImageRegistry | required "A valid .Values.priobikeImageRegistry or .Values.global.priobikeImageRegistry entry is required!" -}}
+          /{{ .Values.manager.imageName }}:v2.2
+        envFrom:
+        - configMapRef:
+            name: {{ .Values.manager.configMapName }}
+        - secretRef:
+            name: {{ .Values.manager.secretName }}
