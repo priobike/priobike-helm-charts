@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.manager.serviceName }}
+spec:
+  selector:
+    app: {{ .Values.manager.labels.app }}
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+      name: admin-port
+    - protocol: TCP
+      port: 8001
+      targetPort: 8001
+      name: sync-port
+  type: ClusterIP

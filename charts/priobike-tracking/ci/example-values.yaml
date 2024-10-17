@@ -1,0 +1,10 @@
+namespace: exampleNamespace
+priobikeImageRegistry: bikenow.vkw.tu-dresden.de/priobike
+
+manager:
+  djangoSuperuserPassword: test-password
+  apiKey: test-key
+
+csrfTrustedOrigin: http://localhost
+djangoKey: test-key
+syncKey: test-key
