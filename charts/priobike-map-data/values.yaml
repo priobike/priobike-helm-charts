@@ -1,0 +1,7 @@
+replicas: 1
+imageName: priobike-map-data
+deploymentName: priobike-map-data-deployment
+containerName: priobike-map-data-container
+serviceName: priobike-map-data-service
+labels:
+  app: priobike-map-data-app
