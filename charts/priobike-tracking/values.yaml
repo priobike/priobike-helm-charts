@@ -27,4 +27,3 @@ worker:
   secretName: priobike-tracking-worker-secret
   appUrl: /tracking-service/
   debug: 'False'
-
