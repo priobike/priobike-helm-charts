@@ -1,0 +1,29 @@
+imageName: priobike-tracking-service
+
+manager:
+  labels:
+    app: priobike-tracking-manager-app
+  configMapName: priobike-tracking-manager-config
+  deploymentName: priobike-tracking-manager-deployment
+  containerName: priobike-tracking-manager-container
+  volumeClaimName: priobike-tracking-manager-volume-claim
+  storageClassName: standard
+  storageSize: 1Gi
+  volumeName: priobike-tracking-manager-volume
+  serviceName: priobike-tracking-manager-service
+  secretName: priobike-tracking-manager-secret
+  appUrl: /tracking-service-manager/
+  debug: 'False'
+
+worker:
+  replicas: 1
+  labels:
+    app: priobike-tracking-worker-app
+  configMapName: priobike-tracking-worker-config
+  deploymentName: priobike-tracking-worker-deployment
+  containerName: priobike-tracking-worker-container
+  serviceName: priobike-tracking-worker-service
+  headlessServiceName: priobike-tracking-worker-service-headless
+  secretName: priobike-tracking-worker-secret
+  appUrl: /tracking-service/
+  debug: 'False'
