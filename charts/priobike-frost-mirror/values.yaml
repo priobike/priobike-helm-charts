@@ -1,0 +1,15 @@
+replicas: 1
+imageName: priobike-frost-mirror-importer
+deploymentName: priobike-frost-mirror-deployment
+containerName: priobike-frost-mirror-container
+serviceName: priobike-frost-mirror-service
+configMapName: priobike-frost-mirror-config
+secretName: priobike-frost-mirror-secret
+labels:
+  app: priobike-frost-mirror-app
+httpCorsEnable: true
+httpCorsAllowedOrigins: "*"
+persistenceDbDriver: org.postgresql.Driver
+persistenceDbUrl: jdbc:postgresql://localhost:5432/frost-db
+persistenceAutoUpdateDatabase: true
+persistenceIdGenerationMode: ServerAndClientGenerated
