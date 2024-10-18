@@ -1,0 +1,7 @@
+priobikeImageRegistry: bikenow.vkw.tu-dresden.de/priobike
+namespace: exampleNamespace
+
+persistenceDbUsername: postgres
+persistenceDbPassword: frost-password
+
+serviceRootUrl: http://localhost/priobike-frost-mirror/FROST-Server
