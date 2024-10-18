@@ -601,6 +601,22 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-shlink-guard-0.1.0/priobike-shlink-guard-0.1.0.tgz
     version: 0.1.0
+  priobike-tracking:
+  - apiVersion: v2
+    appVersion: v2.2
+    created: "2024-10-18T09:28:21.301197147Z"
+    description: A Helm chart for Kubernetes
+    digest: b32b005ae5874363cdba0dd4849e4c762c389f5c06d7ba181e70a5cb5094ce5f
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-tracking
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-tracking-0.1.0/priobike-tracking-0.1.0.tgz
+    version: 0.1.0
   privacy-policy:
   - apiVersion: v2
     appVersion: v1.2
@@ -647,4 +663,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-16T08:57:23.600634097Z"
+generated: "2024-10-18T09:28:21.3012739Z"
