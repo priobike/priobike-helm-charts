@@ -78,6 +78,22 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-graphhopper-drn-0.1.0/priobike-graphhopper-drn-0.1.0.tgz
     version: 0.1.0
+  priobike-map-data:
+  - apiVersion: v2
+    appVersion: v1.0
+    created: "2024-10-18T09:28:29.872766843Z"
+    description: A Helm chart for Kubernetes
+    digest: 7854994e699fc461acfbddbb69672a3c883ac82a6900d024c9a9f9c9e43f8295
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-map-data
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-map-data-0.1.0/priobike-map-data-0.1.0.tgz
+    version: 0.1.0
   priobike-mqtt:
   - apiVersion: v2
     appVersion: v1.0
@@ -663,4 +679,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-18T09:28:21.3012739Z"
+generated: "2024-10-18T09:28:29.87287664Z"
