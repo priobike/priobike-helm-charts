@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: {{ .Values.configMapName }}
 data:
-  serviceRootUrl: {{ required "A valid .Values.serviceRootUrl entry is required!" .Values.serviceRootUrl | quote }}
+  serviceRootUrl: {{ required "A valid .Values.serviceRootUrl entry is required!" .Values.serviceRootUrl }}
 
   http_cors_enable: {{ required "A valid .Values.httpCorsEnable entry is required!" .Values.httpCorsEnable | quote }}
   http_cors_allowed.origins: {{ required "A valid .Values.httpCorsAllowedOrigins entry is required!" .Values.httpCorsAllowedOrigins | quote }}
