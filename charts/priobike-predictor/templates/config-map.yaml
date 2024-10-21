@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.configMapName }}
+data:
+  PREDICTION_MQTT_URL: {{ required "A valid .Values.predictionMqttUrl entry is required!" .Values.predictionMqttUrl }}
+
+  # The FROST server config.
+  SENSORTHINGS_URL_THINGS: {{ required "A valid .Values.sensorThingsUrlThings entry is required!" .Values.sensorThingsUrlThings }}
+  SENSORTHINGS_URL_OBSERVATIONS: {{ required "A valid .Values.sensorThingsUrlObservations entry is required!" .Values.sensorThingsUrlObservations }}
+  SENSORTHINGS_MQTT_URL: {{ required "A valid .Values.sensorThingsMqttUrl entry is required!" .Values.sensorThingsMqttUrl }}
+
+  # The path under which all resources will be stored for the web API.
+  STATIC_PATH: {{ required "A valid .Values.staticPath entry is required!" .Values.staticPath }}
