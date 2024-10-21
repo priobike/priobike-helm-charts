@@ -446,6 +446,22 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-poi-0.1.0/priobike-poi-0.1.0.tgz
     version: 0.1.0
+  priobike-predictor:
+  - apiVersion: v2
+    appVersion: v1.2
+    created: "2024-10-21T12:51:53.425332919Z"
+    description: A Helm chart for Kubernetes
+    digest: ab379cca6f38a4696ee2aaaab92fe6a46139ce03ea3842189020835252f8bb5e
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-predictor
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-predictor-0.1.0/priobike-predictor-0.1.0.tgz
+    version: 0.1.0
   priobike-privacy-policy:
   - apiVersion: v2
     appVersion: v1.2
@@ -695,4 +711,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-21T06:33:29.82971938Z"
+generated: "2024-10-21T12:51:53.425404613Z"
