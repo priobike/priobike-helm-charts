@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.configMapName }}
+data:
+  serviceRootUrl: {{ required "A valid .Values.serviceRootUrl entry is required!" .Values.serviceRootUrl }}
+
+  http_cors_enable: {{ required "A valid .Values.httpCorsEnable entry is required!" .Values.httpCorsEnable | quote }}
+  http_cors_allowed.origins: {{ required "A valid .Values.httpCorsAllowedOrigins entry is required!" .Values.httpCorsAllowedOrigins | quote }}
+  persistence_db_driver: {{ required "A valid .Values.persistenceDbDriver entry is required!" .Values.persistenceDbDriver }}
+  persistence_db_url: {{ required "A valid .Values.persistenceDbUrl entry is required!" .Values.persistenceDbUrl }}
+  persistence_autoUpdateDatabase: {{ required "A valid .Values.persistenceAutoUpdateDatabase entry is required!" .Values.persistenceAutoUpdateDatabase | quote }}
+  persistence_idGenerationMode: {{ required "A valid .Values.persistenceIdGenerationMode entry is required!" .Values.persistenceIdGenerationMode }}
