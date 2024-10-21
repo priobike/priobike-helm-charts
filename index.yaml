@@ -62,6 +62,22 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-cache-0.1.0/priobike-cache-0.1.0.tgz
     version: 0.1.0
+  priobike-frost-mirror:
+  - apiVersion: v2
+    appVersion: v1.1
+    created: "2024-10-21T06:33:29.829649209Z"
+    description: A Helm chart for Kubernetes
+    digest: 3cf69609af3c6eb32000754bc2b881eb7e97b0d552684be1af3a7f4793b9fe47
+    maintainers:
+    - email: paul_maximilian.pickhardt@tu-dresden.de
+      name: Paul
+    - email: daniel.jeschor@tu-dresden.de
+      name: Daniel
+    name: priobike-frost-mirror
+    type: application
+    urls:
+    - https://github.com/priobike/priobike-helm-charts/releases/download/priobike-frost-mirror-0.1.0/priobike-frost-mirror-0.1.0.tgz
+    version: 0.1.0
   priobike-graphhopper-drn:
   - apiVersion: v2
     appVersion: v1.2
@@ -679,4 +695,4 @@ entries:
     urls:
     - https://github.com/priobike/priobike-helm-charts/releases/download/privacy-policy-0.1.0/privacy-policy-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-18T09:28:29.87287664Z"
+generated: "2024-10-21T06:33:29.82971938Z"
