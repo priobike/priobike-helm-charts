@@ -1,0 +1,4 @@
+namespace: example-namespace
+priobikeImageRegistry: bikenow.vkw.tu-dresden.de/priobike
+
+predictionMqttPassword: test

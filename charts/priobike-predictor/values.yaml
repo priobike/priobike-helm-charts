@@ -1,0 +1,30 @@
+imageName: priobike-predictor
+
+labels:
+  app: priobike-predictor-app
+configMapName: priobike-predictor-config
+deploymentName: priobike-predictor-deployment
+containerName: priobike-predictor-container
+volumeClaimName: priobike-predictor-volume-claim
+storageClassName: standard
+storageSize: 1Gi
+volumeName: priobike-predictor-volume
+secretName: priobike-predictor-secret
+
+# The path under which all resources will be stored for the web API.
+staticPath: /usr/share/nginx/html
+
+nginx:
+  labels:
+    app: priobike-predictor-nginx-app
+  imageName: priobike-nginx
+  deploymentName: priobike-predictor-nginx-deployment
+  containerName: priobike-predictor-nginx-container
+  serviceName: priobike-predictor-nginx-service
+
+# Remove after testing
+predictionMqttUrl: tcp://priobike-mqtt-service.example-namespace.svc.cluster.local:1883
+predictionMqttUsername: backend
+sensorThingsUrlThings: https://tld.iot.hamburg.de/v1.1/ # For priobike frost mirror: <service_name>.<namespace>.svc.cluster.local/priobike-frost-mirror/FROST-Server/v1.1/
+sensorThingsUrlObservations: https://tld.iot.hamburg.de/v1.1/
+sensorThingsMqttUrl: tcp://tld.iot.hamburg.de:1883
