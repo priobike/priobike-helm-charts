@@ -7,7 +7,6 @@ data:
 
   # The FROST server config.
   SENSORTHINGS_URL_THINGS: {{ required "A valid .Values.sensorThingsUrlThings entry is required!" .Values.sensorThingsUrlThings }}
-  # On our FROST mirror are no observations. Therefore, we use the original FROST server for the pre-fetch of the observations.
   SENSORTHINGS_URL_OBSERVATIONS: {{ required "A valid .Values.sensorThingsUrlObservations entry is required!" .Values.sensorThingsUrlObservations }}
   SENSORTHINGS_MQTT_URL: {{ required "A valid .Values.sensorThingsMqttUrl entry is required!" .Values.sensorThingsMqttUrl }}
 
