@@ -16,7 +16,7 @@ staticPath: /usr/share/nginx/html
 
 predictionMqttUrl: tcp://priobike-mqtt-service.example-namespace.svc.cluster.local:1883
 predictionMqttUsername: backend
-sensorThingsUrlThings: https://tld.iot.hamburg.de/v1.1/ # For priobike frost mirror: <service_name>.<namespace>.svc.cluster.local/priobike-frost-mirror/FROST-Server/v1.1/
+sensorThingsUrlThings: https://tld.iot.hamburg.de/v1.1/  # For priobike frost mirror: <service_name>.<namespace>.svc.cluster.local/priobike-frost-mirror/FROST-Server/v1.1/
 sensorThingsUrlObservations: https://tld.iot.hamburg.de/v1.1/
 sensorThingsMqttUrl: tcp://tld.iot.hamburg.de:1883
 
